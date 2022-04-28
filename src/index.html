@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./sass/main.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <!-- <section class="section"> -->
+      <!--elementy tła-->
+      <!-- <div class="bg-square bg-square-left"></div> -->
+      <!-- <div class="bg-square bg-square-right"></div> -->
+      <!-- </section> -->
+      <!--treść strony-->
+      <div class="container">
+        <form class="form">
+          <input class="search-bar" type="text" name="city-name" placeholder="Enter the city" />
+          <button class="submit-btn" type="submit">></button>
+        </form>
+        <div id="historyParent" class="history"></div>
+
+        <div class=".section-active weather-container" id="todaySection"></div>
+        <div class="btn-container" id="weather-buttons-container">
+          <button id="today-btn" type="button" class="days-btn active">TODAY</button>
+          <button id="Days5Btn" type="button" class="days-btn not-active days-btn_padding">
+            5 DAYS
+          </button>
+        </div>
+        <div class="Day5CityName Days5_hiden"></div>
+        <div class="Days5 Days5_hiden"></div>
+        <div class="date-quote__container">
+          <div class="date-container-bg">
+            <!-- <include src=""></include> -->
+          </div>
+          <div class="quote-container">
+            <!-- <img class="quotation-marks" src="./images/“.svg" /> -->
+            <p class="quote-txt">
+              Who cares about the clouds when we're together? Just sing a song and bring the sunny
+              weather.
+            </p>
+            <p class="quote-author">Dale Evans</p>
+          </div>
+        </div>
+      </div>
+      <section class="container">
+        <div class="chart">
+          <button class="chart-btn__show Days5_hiden">Show Chart</button>
+          <button class="chart-btn__close hidden Days5_hiden">Close Chart</button>
+          <canvas id="myChart" class="hidden"></canvas>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

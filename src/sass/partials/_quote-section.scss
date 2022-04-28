@@ -1,0 +1,80 @@
+.quote-container {
+  @media screen and (max-width: $tablet) {
+    //width: 280px;
+    margin-top: 43.59px;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 379px;
+    margin-top: 63px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 340px;
+    // top: 702px;
+  }
+}
+
+.quote-txt {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4%;
+  text-align: right;
+  color: $txt-color;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 22px;
+    line-height: 26.4px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 26.4px;
+    margin-bottom: 30px;
+  }
+}
+
+.quote-author {
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 4%;
+  text-align: right;
+  color: $txt-color;
+}
+.quotation-marks {
+  position: absolute;
+  color: $txt-color;
+  font-family: 'Lato';
+
+  @media screen and (max-width: $tablet) {
+    width: 21.62px;
+    height: 20px;
+    left: 300.42px;
+    top: 684px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 49.42px;
+    height: 45.7px;
+    top: 1029.7px;
+    left: 613.42px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 49.42px;
+    height: 45.7px;
+    left: 1170.42px;
+    top: 728.7px;
+  }
+}

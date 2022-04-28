@@ -1,0 +1,43 @@
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  position: relative;
+  margin-left: -40px;
+  width: 28px;
+  height: 28px;
+  background-color: $submit-btn-color;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+}
+
+.search-bar {
+  // position: absolute;
+  background-color: $txt-color;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 20px;
+
+  @media screen and (max-width: $tablet) {
+    width: 280px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 500px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 520px;
+    height: 48px;
+    font-size: 18px;
+  }
+}

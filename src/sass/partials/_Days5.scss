@@ -1,0 +1,328 @@
+.Day5CityName {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 22px auto;
+}
+.Days5 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: rgba(16, 33, 54, 0.8);
+  box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+  border-radius: 34px;
+  margin: 0 auto;
+  /* width */
+
+  @media screen and (max-width: $tablet) {
+    width: 280px;
+    padding: 76px 20px 30px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 620px;
+    padding: 40px 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1060px;
+    padding: 40px 80px;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+  }
+
+  &_viev {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // padding: 10px;
+    @media screen and (max-width: $tablet) {
+      height: 154px;
+      width: 82px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      height: 190px;
+      width: 100px;
+      margin: 0 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 228px;
+      width: 120px;
+      margin: 0 30px;
+    }
+    &__temp {
+      display: flex;
+      flex-direction: row;
+      p {
+        line-height: 22px;
+        color: #ffffff;
+        opacity: 0.55;
+        font-family: 'Lato';
+        font-style: normal;
+        text-align: center;
+        @media screen and (max-width: $tablet) {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          width: 41px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          width: 50px;
+        }
+
+        @media screen and (min-width: $desktop) {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          width: 60px;
+        }
+      }
+    }
+    &__tempValue {
+      font-family: 'Lato';
+      font-style: normal;
+      color: #ff6b09;
+      display: flex;
+      flex-direction: row;
+
+      font-size: 25px;
+      line-height: 30px;
+      p {
+        text-align: center;
+        @media screen and (max-width: $tablet) {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          width: 41px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          width: 50px;
+        }
+
+        @media screen and (min-width: $desktop) {
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 30px;
+          width: 60px;
+        }
+      }
+    }
+    &__week {
+      color: #fff;
+      font-family: 'Lato';
+      font-style: normal;
+      text-align: center;
+      letter-spacing: 0.04em;
+      opacity: 0.55;
+      @media screen and (max-width: $tablet) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &__day {
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Lato';
+      font-style: normal;
+      text-align: center;
+      letter-spacing: 0.04em;
+      @media screen and (max-width: $tablet) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+    &__moreInfo {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+      a {
+        color: #ffffff;
+        opacity: 0.3;
+      }
+    }
+    &__icon {
+      background-size: cover;
+      @media screen and (max-width: $tablet) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 75px;
+        height: 75px;
+      }
+    }
+    &__icon01n {
+      background-image: url('../images/01d.png');
+    }
+    &__icon02n {
+      background-image: url('../images/02d.png');
+    }
+    &__icon03n {
+      background-image: url('../images/03d.png');
+    }
+    &__icon04n {
+      background-image: url('../images/04d.png');
+    }
+    &__icon09n {
+      background-image: url('../images/09d.png');
+    }
+    &__icon10n {
+      background-image: url('../images/10d.png');
+    }
+    &__icon11n {
+      background-image: url('../images/11d.png');
+    }
+    &__icon13n {
+      background-image: url('../images/13d.png');
+    }
+    &__icon50n {
+      background-image: url('../images/50d.png');
+    }
+
+    &__icon01d {
+      background-image: url('../images/01d.png');
+    }
+    &__icon02d {
+      background-image: url('../images/02d.png');
+    }
+    &__icon03d {
+      background-image: url('../images/03d.png');
+    }
+    &__icon04d {
+      background-image: url('../images/04d.png');
+    }
+    &__icon09d {
+      background-image: url('../images/09d.png');
+    }
+    &__icon10d {
+      background-image: url('../images/10d.png');
+    }
+    &__icon11d {
+      background-image: url('../images/11d.png');
+    }
+    &__icon13d {
+      background-image: url('../images/13d.png');
+    }
+    &__icon50d {
+      background-image: url('../images/50d.png');
+    }
+  }
+  &_hiden {
+    visibility: hidden;
+    margin: 0;
+    display: none;
+  }
+}
+
+.more-info {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    height: 218px;
+    width: 120px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 15px 16px;
+    color: #fff;
+  }
+  &__time {
+    font-family: 'lato';
+    font-size: 14px;
+    opacity: 0.54;
+  }
+  &__temp {
+    color: #ff6b09;
+    font-family: 'lato';
+    font-weight: 700;
+    font-size: 25px;
+  }
+  &__detail {
+    display: flex;
+    width: 100px;
+    margin: 5px 0;
+    &-pressure {
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/barometer.png');
+      background-size: cover;
+    }
+    &-humidity {
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/humidity.png');
+      background-size: cover;
+    }
+    &-wind {
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/wind.png');
+      background-size: cover;
+    }
+    &-value {
+      opacity: 0.54;
+      margin-left: 10px;
+    }
+  }
+}

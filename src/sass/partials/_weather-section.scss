@@ -1,0 +1,184 @@
+.weather-container {
+  background-color: $section-bg;
+  margin-top: 20px;
+  // position: absolute;
+  display: flex;
+  margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
+    width: 280px;
+    height: 190px;
+    // left: 20px;
+    // top: 166px;
+    border-radius: 34px;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    width: 500px;
+    height: 300px;
+    // left: 134px;
+    // top: 258px;
+    border-radius: 34px;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    width: 450px;
+    height: 300px;
+    // left: 830px;
+    // top: 259px;
+    border-radius: 34px 34px 34px 34px;
+    margin-top: 20px;
+  }
+}
+
+.min-max-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.weather-txt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $tablet) {
+    // flex-direction: column;
+    margin-top: 9px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    // flex-direction: column;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // flex-direction: column;
+  }
+}
+.weather_section_city_pogoda {
+  display: flex;
+  flex-direction: row;
+  // margin-top: 20px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.weather_section_city_name {
+  // position: absolute;
+  width: 101px;
+  height: 26px;
+  font-family: 'Lato';
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  color: #767d85;
+
+  @media screen and (max-width: $tablet) {
+    // left: 110px;
+    // top: 236px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    // left: 334px;
+    // top: 327px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // left: 984px;
+    // top: 328px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.today_current_temp {
+  font-family: 'Lato';
+  font-weight: 300;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-align: center;
+
+  @media screen and (max-width: $tablet) {
+    width: 75px;
+    height: 56px;
+    font-size: 45px;
+    line-height: 54px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 90px;
+    height: 96px;
+    font-size: 90px;
+    line-height: 108px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 90px;
+    height: 96px;
+    font-size: 90px;
+    line-height: 108px;
+  }
+}
+
+.today_temp_txt {
+  font-family: 'Lato';
+  align-items: center;
+  text-align: center;
+  color: #767d85;
+
+  @media screen and (max-width: $tablet) {
+    width: 35px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 50px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 50px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.today_temp_value {
+  align-items: center;
+  text-align: center;
+  font-family: 'Lato';
+  color: $txt-color;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
